@@ -1,0 +1,160 @@
+<!--------
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Dang Trung Hieu
+ID: s3911594
+Acknowledgement: Acknowledge the resources that you use here.
+----->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="main.html"><img src="https://images.vexels.com/media/users/3/157545/isolated/lists/057098b4a63e172134e0f04bbbcd6e8b-school-book-icon.png" width="200px"></a>
+                </div>
+                <nav>
+                    <ul id="Menu">
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-Fiction</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" width="30px" height="30px">
+                <img src="img/menu.png" class="menu-icon" onclick="menuclick()">
+            </div>
+        </div>
+    </div>
+
+<!------ home page categories products-->
+<div class="small-container">
+    <a href="fiction.html"><h2 class="title">Romance</h2></a>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/CallMeByYourName.jpg">
+            <h4>Call Me By Your Name</h4>
+            <p>$11.00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/TheKissQuotient.jpg">
+            <h4>The Kiss Quotient</h4>
+            <p>$13.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/ThingsWeNeverGotOver.jpg">
+            <h4>Things We Never Got Over</h4>
+            <p>$12.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Outlander.jpg">
+            <h4>Outlander</h4>
+            <p>$19.99</p>
+        </div>
+    </div>
+    <a href="fiction.html"><h2 class="title">Fantasy</h2></a>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/AWizardofEarthSea.jpg">
+            <h4>A Wizard of Earthsea</h4>
+            <p>$22.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/GardenoftheMoon.jpg">
+            <h4>Garden of the Moon</h4>
+            <p>$14.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Dune.jpg">
+            <h4>Dune</h4>
+            <p>$24.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/AmericanGods.jpg">
+            <h4>American Gods</h4>
+            <p>$5.99</p>
+        </div>
+    </div>
+    <a href="fiction.html"><h2 class="title">Horror/Mystery</h2></a>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/Dagon.jpg">
+            <h4>Dagon</h4>
+            <p>$5.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Frankenstein.jpg">
+            <h4>Frankenstein</h4>
+            <p>$19.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Dracula.jpg">
+            <h4>Dracula</h4>
+            <p>$30.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/TheBlackCat.jpg">
+            <h4>The Black Cat</h4>
+            <p>$14.99</p>
+        </div>
+    </div>
+</div>
+<!----footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <p>Download our app on<br> IOS and Android.</p>
+                    <div class="app-logo">
+                        <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="main.html"><img src="https://images.vexels.com/media/users/3/157545/isolated/lists/057098b4a63e172134e0f04bbbcd6e8b-school-book-icon.png"></a>
+                    <p>Book is knowledge.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>About Us</h3>
+                    <h3>Privacy Policy</h3>
+                    <h3>Terms</h3>
+                    <h3>Copyrights</h3>
+                    <a href="contact.html"><h3>Contact Us</h3></a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Book House</p>
+        </div>
+    </div>
+<!-----javascript for clicking the menu-->
+<script>
+    var Menu = document.getElementById("Menu");
+
+    Menu.style.maxHeight = "0px"
+
+    function menuclick(){
+        if(Menu.style.maxHeight == "0px")
+            {
+                Menu.style.maxHeight = "200px";
+            }
+        else
+            {
+                Menu.style.maxHeight = "0px";
+            }
+    }
+</script>
+</body>
+</html>

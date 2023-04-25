@@ -1,0 +1,76 @@
+<div class="small-container detail-product">
+    <div class="row">
+        <div class="detail-col">
+            <img src="img/Dagon.jpg" width="80%">
+        </div>
+        <div class="small-img">
+            <div class="small-col">
+                <img src="img/Dagon.jpg" width="20%">
+            </div>
+            <div class="small-col">
+                <img src="img/Dagon.jpg" width="20%">
+            </div>
+            <div class="small-col">
+                <img src="img/Dagon.jpg" width="20%">
+            </div>
+        </div>
+        <div class="detail-col">
+            <a href="main.html"><p>Home</p></a><a href="fiction.html"><p>/Fiction</p></a><a href="detail.html"><p>/Dagon</p></a>
+            <h1>Dagon by H. P. Lovecraft</h1>
+            <h4>$5.99</h4>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+            <h3> Product Details</h3>
+            <p>Dagon is a horror/fiction book written by H. P. Lovecraft,<br> the father of cosmic horror. </p>
+        </div>
+    </div>
+</div>
+
+
+
+.detail-product{
+    display: inline;
+    margin-top: 100px;
+}
+.detail-product .detail-col img{
+    padding: 0;
+}
+.detail-product .detail-col {
+    margin-top: 0;
+    padding: 0 20px;
+}
+.detail-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.detail-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #252322;
+}
+.detail-product .small-img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.detail-product .small-img .small-col {
+    margin: 0 5px;
+}
+.detail-col p{
+    display: inline;
+}
+
+
+-----javascript----
+.detail-product .small-img {
+    display: flex;
+    justify-content: space-between;
+}
+.detail-product .small-img .small-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
